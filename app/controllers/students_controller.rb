@@ -1,4 +1,9 @@
 class StudentsController < ApplicationController
-  get index do
-    route_to 
+  def index
+    redirect_to show
+  end
+  
+  def show
+     @students = Students.all
+  end
 end
