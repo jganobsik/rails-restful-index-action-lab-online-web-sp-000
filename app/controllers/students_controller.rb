@@ -1,9 +1,6 @@
 class StudentsController < ApplicationController
   def index
-    redirect_to show
+    @students = Students.all
   end
-  
-  def show
-     @students = Students.all
-  end
+ 
 end
